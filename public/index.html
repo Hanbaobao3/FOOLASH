@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留学AI咨询机器人 | Study Abroad AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">留学AI咨询机器人</h1>
+            <p id="subtitle">专业的留学规划助手，助你实现留学梦想</p>
+            <div class="language-switch">
+                <button id="zh-btn" class="lang-btn active">中文</button>
+                <button id="en-btn" class="lang-btn">English</button>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="chat-container">
+                <div id="chat-messages" class="chat-messages">
+                    <!-- 消息将在这里显示 -->
+                </div>
+
+                <div class="chat-input-container">
+                    <textarea
+                        id="message-input"
+                        placeholder="请输入您的问题..."
+                        rows="1"
+                    ></textarea>
+                    <button id="send-btn" class="send-btn">
+                        <span id="send-text">发送</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="sidebar-section">
+                    <h3 id="quick-questions-title">常见问题</h3>
+                    <div id="quick-questions" class="quick-questions">
+                        <!-- 常见问题按钮将在这里显示 -->
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 id="history-title">对话历史</h3>
+                    <div id="chat-history" class="chat-history">
+                        <p id="no-history" class="no-history">暂无对话历史</p>
+                    </div>
+                    <button id="clear-history" class="clear-btn" style="display: none;">
+                        <span id="clear-text">清空历史</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 留学AI咨询机器人 | Powered by Z.ai</p>
+        </footer>
+    </div>
+
+    <div id="loading" class="loading" style="display: none;">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
