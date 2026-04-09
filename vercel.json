@@ -19,8 +19,5 @@
       "src": "/(.*)",
       "dest": "/public/$1"
     }
-  ],
-  "env": {
-    "GLM_API_KEY": "@glm_api_key"
-  }
+  ]
 }
